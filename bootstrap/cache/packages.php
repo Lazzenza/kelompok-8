@@ -1,9 +1,14 @@
 <?php return array (
-  'laravel/pail' => 
+  'barryvdh/laravel-dompdf' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Pail\\PailServiceProvider',
+      0 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Pdf' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
+      'PDF' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
     ),
   ),
   'laravel/sail' => 
@@ -22,13 +27,13 @@
   ),
   'livewire/livewire' => 
   array (
-    'aliases' => 
-    array (
-      'Livewire' => 'Livewire\\Livewire',
-    ),
     'providers' => 
     array (
       0 => 'Livewire\\LivewireServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Livewire' => 'Livewire\\Livewire',
     ),
   ),
   'nesbot/carbon' => 
@@ -50,6 +55,17 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    ),
+  ),
+  'spatie/laravel-ignition' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
     ),
   ),
 );
